@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Dear <%= @user.email %></h1>
+    <p>
+      You have requested more information on the chosen product: <br />
+      <%= @product.title %>.<br>
+      <%= @product.description %>.<br>
+      <%= @product.price %>.<br>
+    </p>
+    <p>
+      To view the product details you can also visit the following site: <%= @url %>.
+    </p>
+  </body>
+</html>
