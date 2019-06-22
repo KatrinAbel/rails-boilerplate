@@ -1,7 +1,5 @@
 <%- model_class = Product -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
-</div>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -21,7 +19,7 @@
         <td><%= product.description %></td>
         <td><%= product.price %></td>
         <% if product.attachement.url %>
-        <td><%= image_tag (product.attachement.url) %></td>
+        <td><%= image_tag (product.attachement.url), class: 'product-image' %></td>
         <% else %>
         <td></td>
         <% end %>
@@ -50,6 +48,8 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_product_path,
-            :class => 'btn btn-primary' %>
+<div class="col-lg-3">
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_product_path,
+              :class => 'btn btn-lg btn-primary' %>
+</div>

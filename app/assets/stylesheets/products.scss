@@ -3,5 +3,43 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  margin: 2vw
+  padding-left: 2vw;
+  padding-right: 2vw
+}
+
+/* Navbar */
+.navbar-default {
+  background-color: #FFF;
+  border-color: #E7E7E7;
+  color: #000;
+}
+/* Title */
+.navbar-default .navbar-brand {
+  color: #000;
+}
+
+/* Link */
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #D5D5D5;
+}
+
+.product-image {
+  width: 300px;
 }
